@@ -12,7 +12,7 @@ function showImage(i) {
   for (i = 0; i < images.length; i++) images[i].style.display = "none";
 
   for (i = 0; i < dots.length; i++)
-    dots[i].className = dots[i].className.replace("active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
 
   if (index > images.length - 1) index = 0;
 
@@ -20,5 +20,5 @@ function showImage(i) {
 
   images[index].style.display = "block";
 
-  dots[index].className += "active";
+  dots[index].className += " active";
 }
