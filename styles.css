@@ -16,10 +16,42 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-
     border: black 2px solid;
 }
 
 .image{
-    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#previous{
+    position: absolute;
+    color: white;
+    left: 0;
+    padding: 16px;
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#next{
+    position: absolute;
+    color: white;
+    right: 0;
+    padding: 16px;
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#previous:hover, #next:hover{
+    background-color: rgba(0, 0, 0, 0.479);
 }
